@@ -5,6 +5,7 @@ nav{
     background-color: rgb(231, 194, 149);
     display: flex;
     height: 50px;
+    margin-top: 30px;
 }
 .logo{
     font-family: cursive;
@@ -39,4 +40,21 @@ nav{
     height: 270px;
     width: 130%;
     border-radius: 12px;
+}
+.main>h2{
+    margin-top: 45px;
+    font-family: Raleway;
+}
+.main>p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: large;
+}
+.main{
+    background-image: url(ChatGPT\ Image\ Oct\ 29\,\ 2025\,\ 09_30_40\ PM.png);
+    padding: 1px;
+}
+.featured{
+    font-family: Raleway;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
