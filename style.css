@@ -33,13 +33,15 @@ nav{
 .img-container{
     display: flex;
     text-align: center;
-    gap: 200px;
+    gap: 50px;
+    justify-content: center;
     margin-left: 10px;
 }
 .card img{
     height: 270px;
-    width: 130%;
+    width: 80%;
     border-radius: 12px;
+    margin-top: 10px;
 }
 .main>h2{
     margin-top: 45px;
@@ -49,12 +51,17 @@ nav{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: large;
 }
-.main{
-    background-image: url(ChatGPT\ Image\ Oct\ 29\,\ 2025\,\ 09_30_40\ PM.png);
-    padding: 1px;
-}
+/* .main{
+    background-image: url(bgimage.png);
+    padding: 1px; */
+/* } */
 .featured{
     font-family: Raleway;
     margin-top: 30px;
     margin-bottom: 30px;
+}
+.card{
+    background-color: antiquewhite;
+    width: 150%;
+    border-radius: 12px;
 }
