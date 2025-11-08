@@ -43,18 +43,14 @@ nav{
     border-radius: 12px;
     margin-top: 10px;
 }
-.main>h2{
+h2{
     margin-top: 45px;
     font-family: Raleway;
 }
-.main>p{
+p{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: large;
 }
-/* .main{
-    background-image: url(bgimage.png);
-    padding: 1px; */
-/* } */
 .featured{
     font-family: Raleway;
     margin-top: 30px;
@@ -64,4 +60,80 @@ nav{
     background-color: antiquewhite;
     width: 150%;
     border-radius: 12px;
+}
+.products button{
+    padding: 8px;
+    background-color: rgb(87, 179, 87);
+    border: none;
+    border-radius: 10px;
+    margin: 5px;
+    cursor: pointer;
+    display: inline;
+}
+.products button:hover{
+    background-color: rgb(24, 94, 24);
+    color: white;
+}
+h3{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.contact-form{
+    background-color: rgb(242, 242, 242);
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    height: 450px;
+    width: 500px;;
+}
+.form{
+    background-color: white;
+    padding: 50px;
+}
+label{
+    display: block;
+    font-weight: bolder;
+    padding: 10px;
+}
+input{
+    margin: 5px;
+    padding: 8px;
+}
+button{
+    background-color: black;
+    color: white;
+    border: none;
+    display: block;
+    margin: 8px;
+    padding: 6px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+footer{
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(229, 199, 162);
+}
+.shop-container img{
+    height: 300px;
+    width: 300px;
+}
+.shop-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    gap: 40px;
+}
+li{
+    font-size: large;
+    font-weight: 400;
+}
+.drinks{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.drinks img{
+    height: 350px;
+    width: 350px;
+    border-radius: 50%;
 }
