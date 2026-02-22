@@ -1,140 +1,357 @@
-*{
-    color: black;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-nav{
+
+body {
+    font-family: 'Raleway', sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
     background-color: rgb(231, 194, 149);
-    display: flex;
-    height: 50px;
-    margin-top: 30px;
+    padding: 15px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
-.logo{
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.logo {
     font-family: cursive;
-    margin-left: 5px;
-    font-size: large;
+    font-size: 1.5rem;
     font-weight: bold;
+    margin-right: 20px;
 }
-.nav-items{
-    list-style-type: none;
+
+.nav-items {
+    list-style: none;
     display: flex;
-    padding: 5px;
-    margin: 14px;
-    gap: 65px;
-    margin-left: 60px;
+    gap: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0;
 }
-.nav-items a{
+
+.nav-items a {
     text-decoration: none;
-    padding: 13px 27px;
+    padding: 10px 20px;
     font-weight: 600;
+    color: #333;
+    border-radius: 5px;
 }
-.nav-items a:hover{
+
+nav a:hover {
     background-color: rgb(135, 90, 36);
     color: white;
 }
-.img-container{
-    display: flex;
+
+.main {
     text-align: center;
-    gap: 50px;
-    justify-content: center;
-    margin-left: 10px;
+    padding: 60px 20px;
 }
-.card img{
-    height: 270px;
-    width: 80%;
-    border-radius: 12px;
-    margin-top: 10px;
-}
-h2{
-    margin-top: 45px;
-    font-family: Raleway;
-}
-p{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: large;
-}
-.featured{
-    font-family: Raleway;
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
-.card{
-    background-color: antiquewhite;
-    width: 150%;
-    border-radius: 12px;
-}
-.products button{
-    padding: 8px;
-    background-color: rgb(87, 179, 87);
-    border: none;
-    border-radius: 10px;
-    margin: 5px;
-    cursor: pointer;
-    display: inline;
-}
-.products button:hover{
-    background-color: rgb(24, 94, 24);
-    color: white;
-}
-h3{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-.contact-form{
-    background-color: rgb(242, 242, 242);
-    margin: 5px;
-    display: flex;
-    justify-content: center;
-    height: 450px;
-    width: 500px;;
-}
-.form{
-    background-color: white;
-    padding: 50px;
-}
-label{
-    display: block;
-    font-weight: bolder;
-    padding: 10px;
-}
-input{
-    margin: 5px;
-    padding: 8px;
-}
-button{
-    background-color: black;
-    color: white;
-    border: none;
-    display: block;
-    margin: 8px;
-    padding: 6px;
-    border-radius: 4px;
+
+.main h2 {
+    font-size: 2.5rem;
     margin-bottom: 20px;
 }
-footer{
+
+.main p {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section h2 {
     text-align: center;
-    padding: 10px;
-    background-color: rgb(229, 199, 162);
+    font-size: 2rem;
+    margin-bottom: 40px;
 }
-.shop-container img{
-    height: 300px;
-    width: 300px;
-}
-.shop-container{
+
+.img-container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-items: center;
-    gap: 40px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
 }
-li{
-    font-size: large;
-    font-weight: 400;
+
+.card {
+    background-color: antiquewhite;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s;
 }
-.drinks{
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 1rem;
+}
+
+.drinks {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
-    margin: 20px
+    gap: 40px;
+    margin: 40px 0;
+    flex-wrap: wrap;
 }
-.drinks img{
-    height: 350px;
-    width: 350px;
+
+.drinks:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.recipe-content {
+    flex: 1;
+    min-width: 280px;
+}
+
+.recipe-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.recipe-content h4 {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+.recipe-content ul {
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+.recipe-content li {
+    margin: 5px 0;
+    font-size: 1rem;
+}
+
+.drinks img {
+    flex: 1;
+    max-width: 350px;
+    width: 100%;
+    height: auto;
     border-radius: 50%;
+    object-fit: cover;
+}
+
+.shop {
+    background-color: #f9f9f9;
+}
+
+.shop p {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 1.1rem;
+}
+
+.shop-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 40px;
+}
+
+.products {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.products img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.products h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.products p {
+    font-size: 0.95rem;
+    margin-bottom: 15px;
+    color: #666;
+}
+
+.products button {
+    padding: 10px 20px;
+    background-color: rgb(87, 179, 87);
+    border: none;
+    border-radius: 8px;
+    margin: 5px;
+    cursor: pointer;
+    color: white;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+.products button:hover {
+    background-color: rgb(24, 94, 24);
+}
+
+.contact {
+    text-align: center;
+}
+
+.contact p {
+    margin-bottom: 30px;
+    font-size: 1.1rem;
+}
+
+.contact-form {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.form {
+    background-color: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+}
+
+.form label {
+    display: block;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.form input, .form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-family: inherit;
+}
+
+.form button {
+    width: 100%;
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+.form button:hover {
+    background-color: #000;
+}
+
+footer {
+    text-align: center;
+    padding: 30px 20px;
+    background-color: rgb(229, 199, 162);
+    margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+    nav {
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .logo {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    nav a {
+        padding: 8px 15px;
+        font-size: 0.9rem;
+    }
+
+    .main h2 {
+        font-size: 2rem;
+    }
+
+    .main p {
+        font-size: 1rem;
+    }
+
+    section h2 {
+        font-size: 1.8rem;
+    }
+
+    .drinks {
+        flex-direction: column !important;
+    }
+
+    .drinks img {
+        max-width: 280px;
+    }
+
+    .form {
+        padding: 30px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        font-size: 1.2rem;
+    }
+
+    nav a {
+        padding: 6px 10px;
+        font-size: 0.85rem;
+    }
+
+    .main h2 {
+        font-size: 1.5rem;
+    }
+
+    section h2 {
+        font-size: 1.5rem;
+    }
+
+    .card h3, .recipe-content h3 {
+        font-size: 1.2rem;
+    }
 }
